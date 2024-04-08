@@ -1,5 +1,6 @@
 import math
 import os
+from concurrent.futures import ProcessPoolExecutor
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -17,10 +18,14 @@ class ThumbnailConfig:
 
 
 def create_thumbnails(dir_path: Path, config: ThumbnailConfig) -> None:
+    video_files = []
     for root, _dirs, files in os.walk(dir_path):
         for file in files:
             if is_video_file(file):
-                create_thumbnail(Path(root) / file, config)
+                video_files.append(Path(root) / file)
+
+    with ProcessPoolExecutor() as executor:
+        executor.map(create_thumbnail, video_files, [config] * len(video_files))
 
 
 VIDEO_FILE_EXTENSIONS: set[str] = {
@@ -156,3 +161,4 @@ def create_thumbnail(path: Path, config: ThumbnailConfig) -> None:
     # 保存缩略图
     result_image_path = path.with_suffix(".jpg")
     cv2.imwrite(str(result_image_path), result_image)
+    print(f"OK: {result_image_path}")
