@@ -28,3 +28,28 @@ allow-direct-references = true
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/video_thumbnail"]
+
+[tool.ruff]
+src = ["src"]
+line-length = 120
+target-version = "py312"
+
+[tool.ruff.lint]
+select = [
+    "E", # pycodestyle errors
+    "W", # pycodestyle warnings
+    "F", # pyflakes
+    "I", # isort
+    "B", # flake8-bugbear
+    "C4", # flake8-comprehensions
+    "SIM", # flake8-simplify
+    "UP", # pyupgrade
+]
+
+[tool.ruff.format]
+skip-magic-trailing-comma = true
+line-ending = "lf"
+
+[tool.ruff.lint.isort]
+known-local-folder = ["video_thumbnail"]
+split-on-trailing-comma = false
