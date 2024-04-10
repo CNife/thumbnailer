@@ -27,8 +27,12 @@ mdurl==0.1.2
     # via markdown-it-py
 numpy==1.26.4
     # via opencv-python
+objprint==0.2.3
+    # via viztracer
 opencv-python==4.9.0.80
     # via video-thumbnail
+orjson==3.10.0
+    # via viztracer
 parso==0.8.4
     # via jedi
 prompt-toolkit==3.0.43
@@ -47,5 +51,6 @@ stack-data==0.6.3
 traitlets==5.14.2
     # via ipython
     # via matplotlib-inline
+viztracer==0.16.2
 wcwidth==0.2.13
     # via prompt-toolkit

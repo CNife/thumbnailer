@@ -21,6 +21,7 @@ build-backend = "hatchling.build"
 managed = true
 dev-dependencies = [
     "ipython",
+    "viztracer[full]",
 ]
 
 [tool.hatch.metadata]
