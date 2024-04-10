@@ -15,8 +15,8 @@ mdurl==0.1.2
 numpy==1.26.4
     # via opencv-python
 opencv-python==4.9.0.80
-    # via video-thumbnail
+    # via thumbnailer
 pygments==2.17.2
     # via rich
 rich==13.7.1
-    # via video-thumbnail
+    # via thumbnailer

@@ -8,4 +8,4 @@ RUN pip install -r requirements.docker.txt --no-cache-dir && \
 
 COPY src ./
 
-ENTRYPOINT ["python", "-u", "-m", "video_thumbnail"]
+ENTRYPOINT ["python", "-u", "-m", "thumbnailer"]

@@ -1,3 +1,3 @@
-# video-thumbnail
+# thumbnailer
 
-Generate Video thumbail.
+Generate Video or Comics thumbnail.

@@ -1,7 +1,7 @@
 [project]
-name = "video-thumbnail"
-version = "0.1.0"
-description = "Generate thumbnail of video"
+name = "thumbnailer"
+version = "0.2.0"
+description = "Generate thumbnail of videoes and comics"
 authors = [
     { name = "潭渊", email = "CNife@vip.qq.com" }
 ]
@@ -21,6 +21,7 @@ build-backend = "hatchling.build"
 managed = true
 dev-dependencies = [
     "ipython",
+    "pre-commit",
     "viztracer[full]",
 ]
 
@@ -28,7 +29,7 @@ dev-dependencies = [
 allow-direct-references = true
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/video_thumbnail"]
+packages = ["src/thumbnailer"]
 
 [tool.ruff]
 src = ["src"]
@@ -52,5 +53,5 @@ skip-magic-trailing-comma = true
 line-ending = "lf"
 
 [tool.ruff.lint.isort]
-known-local-folder = ["video_thumbnail"]
+known-local-folder = ["thumbnailer"]
 split-on-trailing-comma = false

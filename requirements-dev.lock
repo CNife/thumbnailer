@@ -10,12 +10,20 @@
 -e file:.
 asttokens==2.4.1
     # via stack-data
+cfgv==3.4.0
+    # via pre-commit
 colorama==0.4.6
     # via ipython
 decorator==5.1.1
     # via ipython
+distlib==0.3.8
+    # via virtualenv
 executing==2.0.1
     # via stack-data
+filelock==3.13.4
+    # via virtualenv
+identify==2.5.35
+    # via pre-commit
 ipython==8.23.0
 jedi==0.19.1
     # via ipython
@@ -25,16 +33,21 @@ matplotlib-inline==0.1.6
     # via ipython
 mdurl==0.1.2
     # via markdown-it-py
+nodeenv==1.8.0
+    # via pre-commit
 numpy==1.26.4
     # via opencv-python
 objprint==0.2.3
     # via viztracer
 opencv-python==4.9.0.80
-    # via video-thumbnail
+    # via thumbnailer
 orjson==3.10.0
     # via viztracer
 parso==0.8.4
     # via jedi
+platformdirs==4.2.0
+    # via virtualenv
+pre-commit==3.7.0
 prompt-toolkit==3.0.43
     # via ipython
 pure-eval==0.2.2
@@ -42,8 +55,10 @@ pure-eval==0.2.2
 pygments==2.17.2
     # via ipython
     # via rich
+pyyaml==6.0.1
+    # via pre-commit
 rich==13.7.1
-    # via video-thumbnail
+    # via thumbnailer
 six==1.16.0
     # via asttokens
 stack-data==0.6.3
@@ -51,6 +66,10 @@ stack-data==0.6.3
 traitlets==5.14.2
     # via ipython
     # via matplotlib-inline
+virtualenv==20.25.1
+    # via pre-commit
 viztracer==0.16.2
 wcwidth==0.2.13
     # via prompt-toolkit
+setuptools==69.2.0
+    # via nodeenv
