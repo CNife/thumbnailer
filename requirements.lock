@@ -16,6 +16,8 @@ numpy==1.26.4
     # via opencv-python
 opencv-python==4.9.0.80
     # via thumbnailer
+pillow==10.3.0
+    # via thumbnailer
 pygments==2.17.2
     # via rich
 rich==13.7.1

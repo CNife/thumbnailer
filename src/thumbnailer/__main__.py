@@ -3,7 +3,8 @@ from pathlib import Path
 
 import rich.traceback
 
-from thumbnailer import ThumbnailConfig, create_thumbnail, create_thumbnails
+from thumbnailer.thumbnail import ThumbnailConfig
+from thumbnailer.video import create_thumbnail, create_thumbnails
 
 
 def parse_args() -> argparse.Namespace:

@@ -45,6 +45,8 @@ orjson==3.10.0
     # via viztracer
 parso==0.8.4
     # via jedi
+pillow==10.3.0
+    # via thumbnailer
 platformdirs==4.2.0
     # via virtualenv
 pre-commit==3.7.0
